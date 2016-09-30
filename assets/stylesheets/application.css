@@ -104,6 +104,11 @@ a:hover {
   height: 280px;
 	text-align: center;
 }
+.page-infos {
+	text-align: left;
+	width: 98%;
+	margin: 80px auto;
+}
 .home-time {
 	margin-top: 40px;
 	font-size: 50px;
@@ -117,9 +122,14 @@ h1 {
 	font-family: 'ShelleyAllegro', Times, serif;
 	font-size: 10em;
 	color: #cea570;
-
+	-webkit-transition: all 0.2s linear;
+		 -moz-transition: all 0.2s linear;
+					transition: all 0.2s linear;
 }
 
+h1:hover {
+	color: #404040;
+}
 .box {
 	background: #fff;
 	padding: 40px 80px;
