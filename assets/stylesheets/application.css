@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	background: url('../images/bg.png');
 	line-height: 1;
 }
 ol, ul {
@@ -45,4 +46,56 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	padding: 2%;
+	height: 100%;
+	position: relative;
+	border-radius: 10px;
+	color: #404040;
+}
+a {
+	color: #cea570;
+	font-size: 1.2em;
+	letter-spacing: 0.5px;
+	padding: 0 5px;
+	text-decoration: none;
+	-webkit-transition: all 0.2s linear;
+	 	 -moz-transition: all 0.2s linear;
+		 			transition: all 0.2s linear;
+}
+a:hover {
+	text-decoration: underline;
+	color: #404040;
+}
+body {
+	border: 10px solid #E9E9E9;
+}
+.home-infos {
+	text-align: center;
+}
+.box {
+	background: #fff;
+	padding: 40px 80px;
+	display: inline-block;
+	border: 1px solid #cea570;
+}
+.footer {
+	width: 100%;
+	position: absolute;
+	bottom: 15px;
+	vertical-align: top;
+}
+.footer .copy {
+	position: absolute;
+	right: 40px;
+	top: 0;
 }
