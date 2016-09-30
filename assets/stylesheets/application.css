@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'ShelleyAllegro';
+  src: url('../fonts/ShelleyAllegro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ShelleyAllegro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ShelleyAllegro.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ShelleyAllegro.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ShelleyAllegro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ShelleyAllegro.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -80,8 +92,30 @@ body {
 	border: 10px solid #E9E9E9;
 }
 .home-infos {
+	position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 280px;
 	text-align: center;
 }
+.home-time {
+	margin-top: 40px;
+	font-size: 50px;
+	font-weight: 100;
+}
+
+/*
+* Typography
+*/
+h1 {
+	font-family: 'ShelleyAllegro', Times, serif;
+	font-size: 10em;
+}
+
 .box {
 	background: #fff;
 	padding: 40px 80px;

@@ -17,7 +17,7 @@ ss = ss - (mm * 60);
 mm = mm - (hh * 60);
 hh = hh - (dd * 24);
 var faltam = '';
-faltam += (dd && dd > 1) ? dd+' dias, ' : (dd==1 ? '1 dia, ' : '');
+faltam += (dd && dd > 1) ? dd+' dias ' : (dd==1 ? '1 dia, ' : '');
 faltam += (toString(hh).length) ? hh+' hr, ' : '';
 faltam += (toString(mm).length) ? mm+' min e ' : '';
 faltam += ss+' seg';
