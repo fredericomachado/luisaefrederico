@@ -7,7 +7,7 @@
     <link href="assets/stylesheets/application.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/favicon.ico">
   </head>
-  <body>
+  <body onLoad="atualizaContador()">
     <header>
       <a href="#">Home</a>
       <a href="#">Evento</a>
@@ -19,12 +19,7 @@
         Luisa e Frederico
       </h1>
       <div class="home-time">
-      <div id="timer">
-        <span id="days"></span>dias
-        <span id="hours"></span>horas
-        <span id="minutes"></span>minutos
-        <span id="seconds"></span>segundos
-      </div>
+        <div id="timer"></div>
       </div>
     </div>
     <!-- <div class="box"></div> -->

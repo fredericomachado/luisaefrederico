@@ -1,36 +1,35 @@
-var timer;
+var YY = 2016;
+var MM = 12;
+var DD = 10;
+var HH = 18;
+var MI = 00;
+var SS = 00;
 
-var compareDate = new Date();
-compareDate.setDate(compareDate.getDate() + 72); //just for this demo today + 7 days
+function atualizaContador()
+{
+var hoje = new Date();
+var futuro = new Date(YY,MM-1,DD,HH,MI,SS);
+var ss = parseInt((futuro - hoje) / 1000);
+var mm = parseInt(ss / 60);
+var hh = parseInt(mm / 60);
+var dd = parseInt(hh / 24);
+ss = ss - (mm * 60);
+mm = mm - (hh * 60);
+hh = hh - (dd * 24);
+var faltam = '';
+faltam += (dd && dd > 1) ? dd+' dias, ' : (dd==1 ? '1 dia, ' : '');
+faltam += (toString(hh).length) ? hh+' hr, ' : '';
+faltam += (toString(mm).length) ? mm+' min e ' : '';
+faltam += ss+' seg';
 
-timer = setInterval(function() {
-  timeBetweenDates(compareDate);
-}, 1000);
-
-function timeBetweenDates(toDate) {
-  var dateEntered = toDate;
-  var now = new Date();
-  var difference = dateEntered.getTime() - now.getTime();
-
-  if (difference <= 0) {
-
-    // Timer done
-    clearInterval(timer);
-
-  } else {
-
-    var seconds = Math.floor(difference / 1000);
-    var minutes = Math.floor(seconds / 60);
-    var hours = Math.floor(minutes / 60);
-    var days = Math.floor(hours / 24);
-
-    hours %= 24;
-    minutes %= 60;
-    seconds %= 60;
-
-    $("#days").text(days);
-    $("#hours").text(hours);
-    $("#minutes").text(minutes);
-    $("#seconds").text(seconds);
-  }
+ if (dd+hh+mm+ss > 0)
+ {
+  document.getElementById('timer').innerHTML = faltam;
+  setTimeout(atualizaContador,1000);
+ }
+ else
+ {
+  document.getElementById('timer').innerHTML = 'É hoje!!';
+  setTimeout(atualizaContador,1000);
+ }
 }
