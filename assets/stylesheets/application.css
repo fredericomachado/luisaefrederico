@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
 @font-face {
   font-family: 'ShelleyAllegro';
   src: url('../fonts/ShelleyAllegro.eot'); /* IE9 Compat Modes */
@@ -7,8 +8,6 @@
        url('../fonts/ShelleyAllegro.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/ShelleyAllegro.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -135,6 +134,15 @@ h1:hover {
 	padding: 40px 80px;
 	display: inline-block;
 	border: 1px solid #cea570;
+}
+.icon-instagram {
+  background: url('../images/icon_instagram.png');
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 2px;
 }
 .footer {
 	width: 100%;
