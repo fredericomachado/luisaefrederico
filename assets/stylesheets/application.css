@@ -14,7 +14,6 @@
    License: none (public domain)
 */
 
-
 * {
 	box-sizing: border-box;
 	position: relative;
@@ -70,7 +69,8 @@ html, body {
 }
 body {
 	background: url('../images/bg.png');
-	border: 20px solid #cea570;
+	/*border: 20px solid #cea570;*/
+  border: 20px solid #404040;
 	padding: 3%;
 }
 header a {
@@ -120,14 +120,14 @@ a:hover {
 h1 {
 	font-family: 'ShelleyAllegro', Times, serif;
 	font-size: 10em;
-	color: #cea570;
+	color: #404040;
 	-webkit-transition: all 0.2s linear;
 		 -moz-transition: all 0.2s linear;
 					transition: all 0.2s linear;
 }
 
 h1:hover {
-	color: #404040;
+  color: #cea570;
 }
 .box {
 	background: #fff;

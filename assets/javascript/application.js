@@ -2,8 +2,8 @@ $( document ).ready(function() {
   var YY = 2016;
   var MM = 12;
   var DD = 10;
-  var HH = 18;
-  var MI = 00;
+  var HH = 19;
+  var MI = 30;
   var SS = 00;
 
   function atualizaContador()
