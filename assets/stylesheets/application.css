@@ -80,6 +80,16 @@ header a {
 	letter-spacing: 1px;
 	padding: 0 15px;
 }
+header a::after {
+  content: ' • ';
+  margin-left: 27px;
+  text-decoration: none;
+}
+
+header a:last-child::after {
+  content: '  ';
+}
+
 a {
 	color: #404040;
 	padding: 0 5px;
@@ -155,3 +165,46 @@ h1:hover {
 	right: 80px;
 	top: 0;
 }
+
+@media only screen and (max-width:720px){
+  .footer a,
+  .copy,
+  header a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  header a::after {
+    content: ' ';
+  }
+  html, body {
+    height: auto;
+  }
+  .home-infos {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+  h1 {
+    display: inline-block;
+    font-size: 4.5em;
+    line-height: .8;
+    margin: 40px auto 10px auto;
+    margin-left: -20px;
+  }
+  .footer {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  .footer .copy {
+    position: relative;
+    right: 0;
+  }
+  .home-time {
+    font-size: 40px;
+  }
+ }
