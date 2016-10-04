@@ -155,14 +155,14 @@ h1:hover {
   margin-bottom: 2px;
 }
 .footer {
-	width: 100%;
+	width: 95%;
 	position: absolute;
 	bottom: 15px;
 	vertical-align: top;
 }
 .footer .copy {
 	position: absolute;
-	right: 80px;
+	right: 10px;
 	top: 0;
 }
 
